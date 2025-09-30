@@ -26,15 +26,19 @@
             "expanded": false,
             "icon": "list",
             "pages": [
-              "event-types",
-              "event-types/availability",
-              "event-types/limits",
-              "event-types/booking-form",
-              "event-types/notifications",
-              "event-types/payments",
-              "event-types/confirmation",
+              "event-type",
+              "event-type/basic",
+              "event-type/availability",
+              "event-type/limits",
+              "event-type/booking-form",
+              "event-type/notifications",
+              "event-type/payments",
+              "event-type/confirmation"
             ]
           },
+          "events",
+          "availability",
+          "integrations",
           {
             "group": "Integrations",
             "expanded": false,
@@ -47,10 +51,7 @@
               "integrations/google-meet",
               "integrations/paypal"
             ]
-          },
-          "events",
-          "availability",
-          "integrations"
+          }
         ]
       },
       {
