@@ -86,6 +86,37 @@
       "linkedin": "https://www.linkedin.com/company/novacal-io"
     }
   },
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "Novacal is a powerful meeting scheduling software that helps you manage calendars, book appointments, and integrate with Google Calendar, Outlook, Zoom, and more. Streamline your scheduling workflow today.",
+      "keywords": "meeting scheduling software, calendar management, appointment booking, scheduling app, Novacal, Google Calendar integration, Outlook integration, Zoom integration, meeting scheduler, appointment scheduler, calendar sync",
+      "author": "Novacal",
+      "robots": "index, follow",
+      "googlebot": "index, follow",
+      "language": "en",
+      "copyright": "Copyright 2025 Novacal",
+      "category": "Productivity Software",
+      "distribution": "global",
+      "coverage": "Worldwide",
+      "og:title": "Novacal - Meeting Scheduling Software Documentation",
+      "og:type": "website",
+      "og:url": "https://help.novacal.io",
+      "og:description": "Complete documentation for Novacal meeting scheduling software. Learn how to manage calendars, integrate with your favorite tools, and optimize your scheduling workflow.",
+      "og:site_name": "Novacal Help Center",
+      "og:locale": "en_US",
+      "twitter:card": "summary_large_image",
+      "twitter:site": "@novacalio",
+      "twitter:creator": "@scxxssx",
+      "twitter:title": "Novacal - Meeting Scheduling Software Documentation",
+      "twitter:description": "Complete documentation for Novacal meeting scheduling software. Learn how to manage calendars, integrate with your favorite tools, and optimize your scheduling workflow.",
+      "application-name": "Novacal Help Center",
+      "apple-mobile-web-app-capable": "yes",
+      "apple-mobile-web-app-title": "Novacal Help"
+    }
+  },
   "styling": {
     "customCss": ["/custom.css"]
   },
