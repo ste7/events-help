@@ -14,32 +14,37 @@
         "group": "Getting started",
         "pages": [
           "index",
-          "quickstart",
-          "development"
+          "quickstart"
         ]
       },
       {
-        "group": "Customization",
+        "group": "Dashboard",
         "pages": [
-          "essentials/settings",
-          "essentials/navigation"
+          "calendar",
+          {
+            "group": "Integrations",
+            "expanded": false,
+            "icon": "plug",
+            "pages": [
+              "integrations/google-calendar",
+              "integrations/outlook-calendar",
+              "integrations/apple-calendar",
+              "integrations/zoom",
+              "integrations/google-meet",
+              "integrations/paypal"
+            ]
+          },
+          "events",
+          "availability",
+          "integrations"
         ]
       },
       {
-        "group": "Writing content",
+        "group": "Settings",
         "pages": [
-          "essentials/markdown",
-          "essentials/code",
-          "essentials/images",
-          "essentials/reusable-snippets"
-        ]
-      },
-      {
-        "group": "AI tools",
-        "pages": [
-          "ai-tools/cursor",
-          "ai-tools/claude-code",
-          "ai-tools/windsurf"
+          "settings/profile",
+          "settings/calendar",
+          "settings/video-conferencing"
         ]
       }
     ]
@@ -83,5 +88,9 @@
   },
   "styling": {
     "customCss": ["/custom.css"]
+  },
+  "appearance": {
+    "default": "light",
+    "strict": true
   }
 }
