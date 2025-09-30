@@ -38,9 +38,8 @@
           },
           "events",
           "availability",
-          "integrations",
           {
-            "group": "Integrations",
+            "group": "Apps & Integrations",
             "expanded": false,
             "icon": "plug",
             "pages": [
