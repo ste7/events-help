@@ -1,0 +1,14 @@
+/* Hide "Powered by Mintlify" branding */
+footer a[href*="mintlify.com"] {
+  display: none !important;
+}
+
+/* Alternative selector in case the above doesn't work */
+footer a[href*="utm_campaign=poweredBy"] {
+  display: none !important;
+}
+
+/* More specific selector targeting the exact link structure */
+footer div:last-child a[href*="mintlify.com"] {
+  display: none !important;
+}
