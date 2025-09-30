@@ -22,6 +22,20 @@
         "pages": [
           "calendar",
           {
+            "group": "Event Types",
+            "expanded": false,
+            "icon": "list",
+            "pages": [
+              "event-types",
+              "event-types/availability",
+              "event-types/limits",
+              "event-types/booking-form",
+              "event-types/notifications",
+              "event-types/payments",
+              "event-types/confirmation",
+            ]
+          },
+          {
             "group": "Integrations",
             "expanded": false,
             "icon": "plug",
