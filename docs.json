@@ -137,5 +137,13 @@
   "appearance": {
     "default": "light",
     "strict": true
-  }
+  },
+  "head": [
+    {
+      "tag": "script",
+      "src": "https://cloud.umami.is/script.js",
+      "data-website-id": "89a0ea50-9bf3-45cc-94d2-73b6288bdecb",
+      "defer": true
+    }
+  ]
 }
