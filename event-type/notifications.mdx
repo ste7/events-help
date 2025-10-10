@@ -22,3 +22,63 @@ Novacal provides a comprehensive email notification system that puts you in cont
 To customize, click on desired notification type and there you can edit settings with dynamic variables.
 
 Customize your notification preferences in your event type settings to ensure you stay informed about the events that matter most to you.
+
+## Notification Variables
+
+Customize your notifications using a variety of dynamic variables. These variables can be utilized to personalize both the subject and content of your notifications. Below is a breakdown of the available variables and how you can use them:
+
+- `EVENT_DURATION`: Event duration (e.g., 30m, 1h 30m)
+
+  - **Scope**: Subject, Content
+  - **Usable**: Before, On Create, On Update, On Cancel
+
+- `EVENT_DATE`: The date when the event will take place
+
+  - **Scope**: Subject, Content
+  - **Usable**: Before, On Create, On Update, On Cancel
+
+- `EVENT_START_TIME`: Time when the event begins
+
+  - **Scope**: Subject, Content
+  - **Usable**: Before, On Create, On Update, On Cancel
+
+- `EVENT_END_TIME`: Time when the event ends
+
+  - **Scope**: Subject, Content
+  - **Usable**: Before, On Create, On Update, On Cancel
+
+- `ATTENDEES_LIST`: Formatted list of all event participants
+
+  - **Scope**: Content
+  - **Usable**: Before, On Create, On Update, On Cancel
+
+- `LOCATION`: Physical or virtual meeting location details
+
+  - **Scope**: Content
+  - **Usable**: Before, On Create, On Update, On Cancel
+
+- `FORM_ANSWERS`: All answers provided in the booking form
+
+  - **Scope**: Content
+  - **Usable**: Before, On Create, On Update, On Cancel
+
+- `PREVIOUS_EVENT_DATE`: Original date before the event was rescheduled
+
+  - **Scope**: Subject, Content
+  - **Usable**: On Update
+
+- `PREVIOUS_EVENT_START_TIME`: Original start time before the event was rescheduled
+
+  - **Scope**: Subject, Content
+  - **Usable**: On Update
+
+- `PREVIOUS_EVENT_END_TIME`: Original end time before the event was rescheduled
+
+  - **Scope**: Subject, Content
+  - **Usable**: On Update
+
+- `CANCELLATION_REASON`: Explanation provided for why the event was canceled
+  - **Scope**: Content
+  - **Usable**: On Cancel
+
+Utilizing these variables allows you to tailor your notifications, ensuring that they are informative and relevant to both you and the event participants.
