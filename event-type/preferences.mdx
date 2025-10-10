@@ -1,0 +1,50 @@
+---
+title: "Preferences"
+description: Customize your event type preferences including calendar display names, colors, and visibility settings to personalize your scheduling experience.
+---
+
+## Event Name Customization
+
+You can customize the event name that appears in your calendar. This name will be used in three key places:
+
+- **Internal calendar view** - How the event appears in your Novacal dashboard
+- **Event listing page** - The display name in your events list
+- **Connected calendars** - How the event appears in Google Calendar, Outlook, and other connected calendar services
+
+### Dynamic Variables
+
+To make your event names more personalized and informative, you can use these dynamic variables:
+
+- `EVENT_TYPE_NAME` - The name of the event type
+- `HOST_NAME` - The name of the person who is hosting the event
+- `BOOKER_NAME` - The name of the person who booked the event
+- `EVENT_DURATION` - Event duration (e.g., 30m, 1h 30m)
+
+**Example:** Using `Meeting with BOOKER_NAME - EVENT_TYPE_NAME` would display as "Meeting with John Smith - 30-minute consultation" in your calendar.
+
+### Default Naming Template
+
+The default naming template for new events is `{{EVENT_DURATION}} meeting: {{HOST_NAME}} and {{BOOKER_NAME}}`. This name format helps provide clarity by showing the duration, the host, and the participant.
+
+If you decide to customize the event name, your changes will replace this default format, allowing for a personalized presentation of your event types in all integrations and views.
+
+## Event Type Color
+
+You can set a custom color for each event type. This color will appear in:
+
+- **Calendar view** - Helps you quickly identify different types of events at a glance
+- **Events listing page** - Color-coded events for easy navigation and organization
+
+Choose colors that help you distinguish between different event types and maintain a consistent visual system across your scheduling platform.
+
+## Privacy Settings
+
+### Hide from Profile Page
+
+You can make an event type **secret** by hiding it from your public profile page. When hidden:
+
+- The event type won't appear on your public booking page
+- Only you can access and use this event type
+- Useful for internal meetings, personal appointments, or event types you're not ready to make public yet
+
+This gives you complete control over which event types are visible to potential bookers while keeping your internal scheduling organized.

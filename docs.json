@@ -32,6 +32,7 @@
               "event-type/limits",
               "event-type/booking-form",
               "event-type/notifications",
+              "event-type/preferences",
               "event-type/payments",
               "event-type/confirmation"
             ]
