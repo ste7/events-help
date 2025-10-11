@@ -7,13 +7,28 @@ description: Integrating your Outlook Calendars with Novacal allows you to sync 
 
 1. Navigate to the **Apps & Integrations** page and go to [Outlook Calendar](https://app.novacal.io/integrations/outlook-calendar)
 2. Click the **Connect** button and you will be redirected to the Outlook login page. Log in with your `Outlook credentials` and you will automatically integrate your Outlook Calendar
-3. To connect an additional calendar, click **Add New** in the same dropdown menu and follow the connection steps again
+3. When connected, your calendars will be automatically selected for booking conflicts. To connect an additional calendar, click **Add Another** and follow the connection steps again
 
 ## How to automatically add booked events to connected calendar
 
 1. Navigate to [Outlook Settings](https://app.novacal.io/settings/calendar) or go to [Outlook Calendar integration](https://app.novacal.io/integrations/outlook-calendar) page
 2. Make sure the switch is turned **on** for **Auto add events** for your default calendar
 3. Select the desired calendar where you want to auto add events from the dropdown menu
+
+## How to customize event name in your calendar
+
+You can customize how events appear in your connected calendar for each event type separately.
+
+1. Go to **Event Types** and select the event type you want to customize
+2. Navigate to the **Preferences** tab
+3. In the calendar event name field, you can write a custom name. The default format is: `{{EVENT_DURATION}} meeting: {{HOST_NAME}} and {{BOOKER_NAME}}`
+
+**Available variables:**
+
+- `EVENT_TYPE_NAME` - The name of the event type
+- `HOST_NAME` - The name of the person who is hosting the event
+- `BOOKER_NAME` - The name of the person who booked the event
+- `EVENT_DURATION` - Event duration (e.g., 30 minutes, 1 hour)
 
 ## How to remove connected Outlook Calendar account
 

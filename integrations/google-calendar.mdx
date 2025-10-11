@@ -15,6 +15,21 @@ description: Integrating your Google Calendars with Novacal lets you automatical
 2. Make sure the switch is turned **on** for **Auto add events** for your default calendar
 3. Select the desired calendar where you want to auto add events from the dropdown menu
 
+## How to customize event name in your calendar
+
+You can customize how events appear in your connected calendar for each event type separately.
+
+1. Go to **Event Types** and select the event type you want to customize
+2. Navigate to the **Preferences** tab
+3. In the calendar event name field, you can write a custom name. The default format is: `{{EVENT_DURATION}} meeting: {{HOST_NAME}} and {{BOOKER_NAME}}`
+
+**Available variables:**
+
+- `EVENT_TYPE_NAME` - The name of the event type
+- `HOST_NAME` - The name of the person who is hosting the event
+- `BOOKER_NAME` - The name of the person who booked the event
+- `EVENT_DURATION` - Event duration (e.g., 30 minutes, 1 hour)
+
 ## How to remove connected Google Calendar account
 
 1. Navigate to [Calendar Settings](https://app.novacal.io/settings/calendar) or go to [Google Calendar integration](https://app.novacal.io/integrations/google-calendar) page
