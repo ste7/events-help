@@ -48,8 +48,7 @@
               "integrations/outlook-calendar",
               "integrations/apple-calendar",
               "integrations/zoom",
-              "integrations/google-meet",
-              "integrations/paypal"
+              "integrations/google-meet"
             ]
           },
           "organization"
