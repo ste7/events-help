@@ -48,7 +48,8 @@
               "integrations/outlook-calendar",
               "integrations/apple-calendar",
               "integrations/zoom",
-              "integrations/google-meet"
+              "integrations/google-meet",
+              "integrations/zapier"
             ]
           },
           "organization"
@@ -57,7 +58,7 @@
       {
         "group": "Settings",
         "pages": [
-          "settings/profile",
+          "settings/general",
           "settings/calendar",
           "settings/video-conferencing"
         ]
