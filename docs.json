@@ -47,6 +47,7 @@
               "integrations/google-calendar",
               "integrations/outlook-calendar",
               "integrations/apple-calendar",
+              "integrations/zoho-calendar",
               "integrations/zoom",
               "integrations/google-meet",
               "integrations/zapier"
