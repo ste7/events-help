@@ -66,20 +66,6 @@
       }
     ]
   },
-  "global": {
-    "anchors": [
-      {
-        "anchor": "Documentation",
-        "href": "https://mintlify.com/docs",
-        "icon": "book-open-cover"
-      },
-      {
-        "anchor": "Blog",
-        "href": "https://mintlify.com/blog",
-        "icon": "newspaper"
-      }
-    ]
-  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
@@ -99,8 +85,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/novacalio",
-      "linkedin": "https://www.linkedin.com/company/novacal-io"
+      "linkedin": "https://www.linkedin.com/company/novacal-io",
+      "x": "https://x.com/novacalio"
     }
   },
   "seo": {
