@@ -33,7 +33,6 @@
               "event-type/booking-form",
               "event-type/notifications",
               "event-type/preferences",
-              "event-type/payments",
               "event-type/confirmation"
             ]
           },
@@ -61,7 +60,8 @@
         "pages": [
           "settings/general",
           "settings/calendar",
-          "settings/video-conferencing"
+          "settings/video-conferencing",
+          "settings/out-of-office"
         ]
       }
     ]
