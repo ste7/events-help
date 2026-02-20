@@ -61,6 +61,7 @@
           "settings/general",
           "settings/calendar",
           "settings/video-conferencing",
+          "settings/custom-domain",
           "settings/out-of-office"
         ]
       }

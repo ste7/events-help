@@ -1,0 +1,70 @@
+---
+title: "Custom Domain"
+description: Use your own domain for your scheduling page. Add a custom domain, configure DNS, and manage domain status.
+icon: "globe"
+"og:title": "Custom Domain Settings - Novacal Help Center"
+"og:description": "Set up a custom domain for your Novacal scheduling page. Add your domain, configure DNS, and manage verification."
+"twitter:title": "Custom Domain Settings - Novacal Help Center"
+"twitter:description": "Set up a custom domain for your Novacal scheduling page. Add your domain, configure DNS, and manage verification."
+---
+
+Custom Domain lets you serve your scheduling page from your own domain (for example, `meet.yourdomain.com`) instead of the default Novacal URL.
+
+## How URLs work with a custom domain
+
+Once your custom domain is active, your scheduling pages are served on your domain:
+
+- Your main scheduling page: **novacal.io/username** is served at **meet.example.com** (root path).
+- Event-type booking links: **novacal.io/username/standard-meeting** becomes **meet.example.com/standard-meeting** — the event-type slug (e.g. `/standard-meeting`) is the same; the username is not in the URL on your custom domain.
+
+So if your default link is `https://novacal.io/jane` and you add `meet.example.com`, bookers can use `https://meet.example.com` for your main page and `https://meet.example.com/standard-meeting` for that event type. Your old Novacal links continue to work as well.
+
+## Adding a Custom Domain
+
+1. Go to **Settings → Custom Domain**.
+2. Enter your full domain in the **Domain** field (e.g. `meet.yourdomain.com`).
+   - Use a subdomain such as `meet`, `book`, or `schedule` — not your root domain (e.g. not `yourdomain.com`).
+3. Click **Add Domain**.
+
+After adding the domain, it will appear in the list with status **Pending** until DNS is configured and verified.
+
+## Configuring DNS
+
+You need to add a **CNAME** record at your DNS provider so the domain points to Novacal.
+
+### CNAME record to add
+
+| Type  | Name        | Value               | TTL  |
+| ----- | ----------- | ------------------- | ---- |
+| CNAME | (subdomain) | `custom.novacal.io` | Auto |
+
+- **Name**: The subdomain part of your custom domain. For `meet.yourdomain.com`, use `meet`. For `book.yourdomain.com`, use `book`.
+- **Value**: Always `custom.novacal.io`.
+- **TTL**: Leave as default (e.g. Auto) unless your provider requires a specific value.
+
+### Where to add the record
+
+Add this CNAME in the DNS settings for the domain where you bought it (e.g. GoDaddy, Namecheap, Cloudflare, Google Domains, your registrar or hosting DNS).
+
+After saving the CNAME, propagation can take a few minutes. Novacal will verify the record and update the domain status when it’s correct.
+
+## Domain Status
+
+- **Pending**: Domain is added but DNS is not yet configured or verified. Add the CNAME record as above and wait for verification.
+- **Active** (or non-pending): DNS is verified. Your scheduling page is available on your custom domain.
+
+Once active, you can share your custom URL (e.g. `https://meet.yourdomain.com`) so bookers use your brand’s domain.
+
+## Deleting a Custom Domain
+
+1. Go to **Settings → Custom Domain**.
+2. Click **Delete** next to your domain.
+3. Confirm in the dialog.
+
+Deleting removes the custom domain from your account. You can add a new one later if needed.
+
+## Tips
+
+- Use a subdomain (e.g. `meet.yourdomain.com`) rather than the root domain for simpler and more reliable setup.
+- After changing DNS, allow a few minutes for verification; if it takes longer, double-check the CNAME name and value at your DNS provider.
+- Only one custom domain can be active per account at a time. Delete the current one before adding another.
