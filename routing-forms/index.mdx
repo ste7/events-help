@@ -126,3 +126,9 @@ A rule can have multiple conditions. **All** conditions must match for the rule 
 ### Default rule
 
 If no rule matches, you can add a default rule with no conditions (or a rule with destination type **Custom Message** and no conditions). This catches visitors whose answers don't match any specific rule and shows them a message or sends them to a generic destination.
+
+<Warning>
+  Without a default rule, visitors whose answers don't match any rule may be
+  sent to the homepage. Add a default rule or custom message to handle these
+  cases.
+</Warning>
