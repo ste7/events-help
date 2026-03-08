@@ -52,7 +52,8 @@
               "integrations/zapier"
             ]
           },
-          "teams"
+          "teams",
+          "routing-forms"
         ]
       },
       {

@@ -1,0 +1,128 @@
+---
+title: "Routing Forms"
+description: Create routing forms to collect information from visitors and direct them to the right event type, team member, or custom destination based on their answers.
+icon: "route"
+"og:title": "Routing Forms - Novacal Help Center"
+"og:description": "Create routing forms to collect information and direct visitors to the right booking destination based on their answers."
+"twitter:title": "Routing Forms - Novacal Help Center"
+"twitter:description": "Create routing forms to collect information and direct visitors to the right booking destination based on their answers."
+---
+
+Routing forms let you gather information from visitors before they book. Based on their answers, you can automatically send them to the right event type, team member, external URL, or show a custom message. This is useful for sales teams, support desks, or anyone who needs to qualify leads or route bookings to different people or services.
+
+<Info>Routing forms are available with the **Team plan**.</Info>
+
+## How routing forms work
+
+1. **Create a form** – Add a name and description for your routing form.
+2. **Add fields** – Define the questions visitors will answer (e.g. "What type of meeting do you need?", "Which department?").
+3. **Set up routing rules** – Create rules that match answers to destinations (e.g. if "Sales" → send to Sales event type; if "Support" → send to Support team member).
+4. **Share the link** – Use your public routing form URL so visitors can fill it out and be directed to the right place.
+
+When a visitor submits the form, Novacal evaluates the rules in order. The first matching rule determines where they go. If no rule matches, you can set a default destination or custom message.
+
+## How to create a routing form
+
+1. Go to the [Dashboard](https://app.novacal.io) and click **Routing** in the sidebar.
+2. Click **Create New**.
+3. Enter a **name** and optional **description** for your form.
+4. Click **Create** – you'll be taken to the form editor.
+
+After creating a form, configure it in three tabs:
+
+- **Details** – Edit the name and description.
+- **Fields** – Add and arrange the questions visitors will answer.
+- **Workflows** – Define routing rules that send visitors to the right destination based on their answers.
+
+## Public form URL
+
+Each routing form has a unique public URL (e.g. `novacal.io/username/routing-form-id`). Share this link with visitors so they can fill out the form and be routed to the appropriate booking page or destination.
+
+You can enable or disable a routing form at any time using the toggle on the form card. When disabled, the public URL will no longer accept submissions.
+
+## Form fields
+
+Form fields are the questions visitors answer when they use your routing form. The answers are used by your routing rules to determine where each visitor is sent.
+
+### How to add fields
+
+1. Open your routing form and go to the **Fields** tab.
+2. Click **Add Field**.
+3. Choose a **field type**, enter a **label**, and configure any options.
+4. Click **Save** to add the field.
+
+You can reorder fields by dragging them. The order affects how they appear on the public form and how you reference them in routing rules.
+
+### Field types
+
+**Text** – Short, single-line text input. Use for names, short answers, or free-form text.
+
+**Textarea** – Multi-line text input for longer responses like descriptions or notes.
+
+**Select** – Dropdown menu with predefined options. Add options one per line. Use when you want visitors to pick from a fixed list (e.g. "Sales", "Support", "General inquiry").
+
+**Checkbox** – Single checkbox for yes/no or agreement questions. Or multiple checkboxes for multi-select when combined with options.
+
+**Radio** – Single choice from multiple options. Similar to Select but displayed as radio buttons. Use when you want all options visible at once.
+
+**Phone** – Phone number input with validation.
+
+**Email** – Email address input with validation.
+
+<Note>
+  For **Select**, **Checkbox**, and **Radio** fields, you must add at least one
+  option. Enter each option on its own line in the options editor.
+</Note>
+
+### Field configuration
+
+- **Label** – The question or prompt shown to visitors.
+- **Placeholder** – Optional hint text inside the input (for text, textarea, email, phone).
+- **Required** – When enabled, visitors must answer before submitting. Required fields are marked with an asterisk (\*).
+- **Identifier** – A unique internal ID for the field. Used when building routing rules. Auto-generated but can be edited.
+
+## Routing rules
+
+Routing rules determine where visitors go after they submit your form. Each rule has conditions (based on field answers) and a destination. Novacal evaluates rules in order and uses the first matching rule. If no rule matches, you can define a default destination or custom message.
+
+### How to add a routing rule
+
+1. Open your routing form and go to the **Workflows** tab.
+2. Click **Add Rule**.
+3. Add one or more **conditions** – select a field, choose a condition (equals, not equals, contains, etc.), and enter the value to match.
+4. Choose a **destination type** and select or enter the destination.
+5. Click **Save** to add the rule.
+
+Rules are evaluated top to bottom. The first rule whose conditions all match is used. Order matters: put more specific rules above broader ones.
+
+### Condition types
+
+- **Equals** – The answer exactly matches the value (case-insensitive for text).
+- **Not equals** – The answer does not match the value.
+- **Contains** – The answer includes the value (for text).
+- **Greater than** – The answer is greater than the value (for numbers).
+- **Less than** – The answer is less than the value (for numbers).
+
+<Note>
+  For **Select** and **Radio** fields, use **Equals** or **Not equals** with the
+  exact option text. For **Checkbox**, the value is typically "true" or "false"
+  depending on whether it's checked.
+</Note>
+
+### Destination types
+
+**Event Type** – Send the visitor to a specific event type booking page (yours or a team member's). They'll land on the calendar to pick a time.
+
+**User** – Send the visitor to a team member's profile page. Useful when you want them to choose from that person's event types.
+
+**Custom URL** – Redirect to any external URL (e.g. a different booking system, a form, or a website).
+
+**Custom Message** – Show a message instead of redirecting. Use for "We'll get back to you" or when no routing option applies. You can also use this as a default fallback with no conditions.
+
+### Multiple conditions
+
+A rule can have multiple conditions. **All** conditions must match for the rule to apply. For example: "Department equals Sales" AND "Region equals Europe" → send to European Sales event type.
+
+### Default rule
+
+If no rule matches, you can add a default rule with no conditions (or a rule with destination type **Custom Message** and no conditions). This catches visitors whose answers don't match any specific rule and shows them a message or sends them to a generic destination.
