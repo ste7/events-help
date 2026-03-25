@@ -38,6 +38,7 @@
           },
           "events",
           "availability",
+          "workflows",
           {
             "group": "Apps & Integrations",
             "expanded": false,

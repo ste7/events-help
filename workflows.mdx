@@ -1,0 +1,86 @@
+---
+title: "Workflows"
+description: Create automated notification workflows for your event types and send the right message before, after, or when meetings change.
+icon: "workflow"
+"og:title": "Workflows - Novacal Help Center"
+"og:description": "Create automated notification workflows for your event types and send email notifications based on booking activity."
+"twitter:title": "Workflows - Novacal Help Center"
+"twitter:description": "Create automated notification workflows for your event types and send email notifications based on booking activity."
+---
+
+Workflows let you create custom notification automations for one or more event types. You can decide when a notification should be sent, who should receive it, and what the message should say.
+
+## Where to manage workflows
+
+You can manage workflows in two places:
+
+- **Workflows** in the main dashboard sidebar for a full list of all workflows
+- **Event Type > Workflows** to see only the workflows assigned to a specific event type
+
+## How workflows work
+
+Each workflow has three parts:
+
+1. **Event types** – choose which event types the workflow applies to
+2. **Trigger** – choose when the workflow should run
+3. **Actions** – add one or more email actions with recipient, subject, and content
+
+You can keep a workflow active, disable it temporarily, or delete it when you no longer need it.
+
+## Available triggers
+
+- **When event is booked** – sends when a booking is created
+- **Before event starts** – sends before the scheduled start time
+- **After event ends** – sends after the scheduled end time
+- **When event is updated** – sends when an event is rescheduled or updated
+- **When event is cancelled** – sends when an event is cancelled
+
+For **Before event starts** and **After event ends**, you can set the offset in minutes, hours, or days.
+
+## Available recipients
+
+- **Host** – sends to the assigned event host
+- **Invitees** – sends to the booker and any guests on the booking
+- **Host and invitees** – sends separate emails to both sides
+
+## Workflow actions
+
+Each workflow can include one or more email actions. For every action you can:
+
+- choose the recipient
+- customize the subject
+- customize the email content
+- enable calendar invitations
+- include cancel and reschedule links when supported by the trigger
+
+`Include cancel and reschedule links` is available for booking, reminder, and update workflows. It is not shown for cancelled or after-event workflows.
+
+## Workflow variables
+
+You can insert dynamic variables into the subject and content so every email is personalized with booking data.
+
+### Shared variables
+
+- `RECIPIENT` – the current email recipient name, or email if no name is available
+- `HOST_FIRST_NAME` – first name of the assigned host
+- `HOST_LAST_NAME` – last name of the assigned host
+- `BOOKER` – name of the person who booked the event
+- `EVENT_DURATION` – event duration
+- `EVENT_DATE` – event date
+- `EVENT_START_TIME` – event start time
+- `EVENT_END_TIME` – event end time
+
+### Content variables
+
+- `ATTENDEES_LIST` – formatted list of all participants
+- `LOCATION` – meeting location details
+- `FORM_ANSWERS` – answers submitted in the booking form
+
+### Trigger-specific variables
+
+- `PREVIOUS_EVENT_DATE` – previous event date before an update
+- `PREVIOUS_EVENT_START_TIME` – previous start time before an update
+- `PREVIOUS_EVENT_END_TIME` – previous end time before an update
+- `CANCELLATION_REASON` – cancellation reason, when available
+
+Some variables are only available for specific triggers. For example, previous event time variables are only available in **When event is updated** workflows.
