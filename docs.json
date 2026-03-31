@@ -32,8 +32,7 @@
               "event-type/limits",
               "event-type/booking-form",
               "event-type/notifications",
-              "event-type/preferences",
-              "event-type/confirmation"
+              "event-type/preferences"
             ]
           },
           "events",
@@ -50,6 +49,7 @@
               "integrations/zoho-calendar",
               "integrations/zoom",
               "integrations/google-meet",
+              "integrations/hubspot",
               "integrations/zapier"
             ]
           },
