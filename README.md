@@ -1,6 +1,6 @@
 # Mintlify Starter Kit
 
-https://novacal.io
+[https://novacal.io](https://novacal.io)
 
 Use the starter kit to get your docs deployed and ready to customize.
 
@@ -30,7 +30,7 @@ mint dev
 
 View your local preview at `http://localhost:3000`.
 
-View production at `https://help.novacal.io`.
+View production at [https://help.novacal.io](https://help.novacal.io).
 
 ## Publishing changes
 
