@@ -10,10 +10,6 @@
   "favicon": "/favicon.ico",
   "redirects": [
     {
-      "source": "/index",
-      "destination": "/"
-    },
-    {
       "source": "/quickstart",
       "destination": "/quick-start"
     },
