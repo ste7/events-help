@@ -8,6 +8,20 @@
     "dark": "#151312"
   },
   "favicon": "/favicon.ico",
+  "redirects": [
+    {
+      "source": "/index",
+      "destination": "/"
+    },
+    {
+      "source": "/quickstart",
+      "destination": "/quick-start"
+    },
+    {
+      "source": "/event-type/confirmation",
+      "destination": "/event-type/preferences"
+    }
+  ],
   "navigation": {
     "groups": [
       {
