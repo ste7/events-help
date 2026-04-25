@@ -10,25 +10,85 @@ icon: "clock"
 
 ## Availability Profiles
 
-You can create multiple availability profiles, each with its own timezone and weekly schedule. This allows you to have different availability rules for different event types.
+You can create multiple availability profiles, each with its own timezone and weekly schedule. This allows you to have different availability rules for different event types (e.g. "Business Hours", "Weekend Support", "Summer Schedule").
 
 Each availability profile includes:
 
-- **Name**: A descriptive name for easy identification
-- **Timezone**: The timezone for this availability schedule
-- **Weekly Schedule**: Working days and time slots that repeat weekly
-- **Event Type Assignment**: Assign one or more event types to use this availability
+- **Name** — A descriptive name for easy identification
+- **Timezone** — The timezone for this availability schedule
+- **Weekly Schedule** — Working days and time slots that repeat every week
+- **Event Type Assignment** — One or more event types assigned to use this availability
 
-## Custom Availability Overrides
+## Managing Profiles
 
-For each availability profile, you can override specific dates with custom availability. This allows you to:
+### Create New
 
-- Set different time slots for specific dates
-- Mark dates as completely unavailable
-- Override availability independently for each availability profile
+Click **Create New** on the Availability page to add a new profile. You'll be prompted to enter a name. The new schedule defaults to Monday–Friday, 9:00 AM–5:00 PM in your current timezone.
+
+### Rename
+
+Open the menu (•••) next to your availability and select **Rename** to update the profile name.
+
+### Duplicate
+
+Select **Duplicate** to create a copy of an existing profile — including its timezone and weekly schedule. The copy is named automatically (e.g. "Working Hours (Copy)"). The duplicate is not set as default.
+
+### Set as Default
+
+Select **Set as Default** to make a profile the default. Only one profile can be default at a time. The default is used as a fallback when event types are reassigned.
+
+### Delete
+
+Select **Delete** to remove a profile. You cannot delete a profile if it's the only one you have. When deleted, any event types using it are automatically reassigned to your default profile.
+
+## Weekly Schedule
+
+### Working Days
+
+Toggle days on or off to control which days of the week you're available. By default Monday through Friday are enabled.
+
+### Time Slots
+
+Each active day can have one or more time slots:
+
+- Click **+** to add another time slot to a day
+- Click **−** to remove a time slot (the first slot on each day is always kept)
+- Slots cannot overlap — you'll see an error if they do
+- End time must be after start time
+
+Times follow 5-minute increments. The latest allowed end time is 23:30.
+
+### Timezone
+
+Each availability profile has its own timezone. All times are stored in that timezone. You can change the timezone from the dropdown at the top of the profile.
+
+## Date Overrides
+
+For specific dates — holidays, out-of-office days, or special hours — you can override the default weekly schedule.
+
+### Add an Override
+
+Click **Override availability** in the Date Overrides section. Select one or more dates from the calendar, then either:
+
+- **Mark as unavailable** — Blocks the entire day. No bookings can be made.
+- **Set custom hours** — Define specific time slots for that date, independent of the weekly schedule.
+
+Dates with existing overrides and past dates cannot be selected.
+
+### Edit an Override
+
+Click the edit icon on any override to adjust its time slots. The date itself cannot be changed after creation.
+
+### Delete an Override
+
+Click the trash icon on any override to remove it. The day will revert to the standard weekly schedule.
+
+## Connecting to Event Types
+
+Each event type is assigned to exactly one availability profile. The profile determines when that event type can be booked.
+
+You can see how many event types are using a profile directly on the availability card. When you delete a profile, its event types are automatically moved to your default profile.
 
 <Info>
-  Custom availability overrides only affect the specific availability profile
-  they belong to, allowing you to manage date-specific changes separately for
-  different event types.
+  Changes to an availability profile apply to all event types using it immediately.
 </Info>
