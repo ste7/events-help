@@ -59,6 +59,7 @@
               "integrations/zoho-calendar",
               "integrations/zoom",
               "integrations/google-meet",
+              "integrations/microsoft-teams",
               "integrations/hubspot",
               "integrations/zapier"
             ]
