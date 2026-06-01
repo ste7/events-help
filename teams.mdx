@@ -1,31 +1,46 @@
 ---
 title: "Teams"
-description: "Teams let your organization collaborate on scheduling, create unlimited teams, share availability, and manage collective events efficiently."
+description: "Teams help your organization manage shared scheduling, team booking pages, members, roles, and collective events."
 icon: "users"
 "og:title": "Teams - Novacal Help Center"
-"og:description": "Collaborate across your organization with multiple teams, shared event types, and collective events."
+"og:description": "Manage teams, organization booking links, members, roles, and collective events in Novacal."
 "twitter:title": "Teams - Novacal Help Center"
-"twitter:description": "Collaborate across your organization with multiple teams, shared event types, and collective events."
+"twitter:description": "Manage teams, organization booking links, members, roles, and collective events in Novacal."
 ---
 
 ## Organizations and Teams
 
-Novacal now groups teams under an **organization**.
+In Novacal, every team belongs to an **organization**. The organization is the shared workspace for your company, department, or group. It controls the public subdomain, and teams and users are created inside it.
 
-- Each organization can create **unlimited teams**
-- Each organization has its own **subdomain**
-- Public team and user booking pages in your organization share the same subdomain
-- Each team has its own `name`, `URL`, members, and settings inside that organization
+- An organization can have **unlimited teams**.
+- Each organization has a public subdomain, such as `acme.novacal.io`.
+- Each team gets a public booking link under the organization subdomain, such as `acme.novacal.io/sales`.
+- Each organization member also gets a personal booking link under the same subdomain, such as `acme.novacal.io/alex`.
+- Each team has its own name, URL, members, settings, profile, and event types.
+
+This keeps all public scheduling links grouped under the same organization while still letting every team and user have a dedicated booking page.
+
+## Public Booking Links
+
+Your organization subdomain is the root for team and user links.
+
+| Page type | Example |
+| --- | --- |
+| Organization subdomain | `acme.novacal.io` |
+| Team booking page | `acme.novacal.io/sales` |
+| User booking page | `acme.novacal.io/alex` |
+
+Use team links when visitors should book with a department, group, or shared event type. Use user links when visitors should book directly with a specific person.
 
 ## Creating a Team
 
 To create a team, go to the **Teams** section in your dashboard and click **Create Team**:
 
-1. **Team Setup**: Enter your team details including `name` and `URL`.
+1. **Team setup**: Enter the team name and URL. The URL becomes the team's public path under your organization subdomain, such as `acme.novacal.io/sales`.
 
-2. **Team Profile**: Add your team's `logo` and `about` information to personalize your public booking page.
+2. **Team profile**: Add a logo and about section to personalize the public booking page.
 
-3. **Invite Members**: Invite team members by entering their email addresses.
+3. **Invite members**: Invite organization members to join the team by entering their email addresses.
 
 ## Team Features
 
@@ -35,17 +50,18 @@ Create collective event types where multiple team members can be booked together
 
 ### Team Members & Roles
 
-Teams support two role levels:
+Novacal uses three role levels across organizations and teams:
 
-- **Owner**: The team owner serves as the event organizer for all collective events. They have full control over the team, including settings, member management, and team deletion. The owner's connected accounts (video conferencing and calendars) are used for collective events, and all participants are automatically added to meetings and calendar events.
-- **Member**: Can view the team and participate in collective events, but cannot manage settings or members
+- **Organization owner**: Manages the organization, including the organization subdomain, organization members, and teams.
+- **Team admin**: Manages a specific team, including team settings, member management, and team event types.
+- **Team member**: Belongs to a team and can participate in team scheduling and collective events, but cannot manage team settings or members.
 
 ### Team Settings
 
-Team owners can manage team settings:
+Team admins can manage team settings:
 
 - **Name**: Update your team's display name
-- **URL**: Customize your team's public booking page URL within your organization
+- **URL**: Customize the team's public booking page path within your organization, such as `/sales`
 - **Logo**: Upload a team logo that appears on your public page
 - **About**: Add a description of your team that appears on your public booking page
 
@@ -53,43 +69,44 @@ Team owners can manage team settings:
 
 Your organization provides the shared structure for all teams:
 
-- **Subdomain**: Used for your organization's public team pages
+- **Subdomain**: Used for your organization's public team and user booking pages
 - **Teams**: Create and manage multiple teams under the same organization
+- **Members**: Give every organization member a personal booking link under the organization subdomain
 
 ## Collective Events Configuration
 
-### How to add participants to collective event type?
+### How to add participants to a collective event type?
 
 To add participants to a collective event type:
 
-1. In event type settings, you can select team members including the owner to be hosts
-2. The system calculates availability based on the availabilities of all hosts
+1. In event type settings, select the team members who should be hosts
+2. The system calculates availability based on the availability of all hosts
 3. When attendees book the event, they book with all hosts
 
-### How to connect video conferencing app to collective event type?
+### How to connect a video conferencing app to a collective event type?
 
 To add video conferencing to a collective event type:
 
-1. The team **owner** (organizer) needs to connect their video conferencing account (Zoom or Google Meet)
-2. In event type settings, select the video conferencing option on location field
-3. The system will automatically use the owner's connected account to create the meeting
+1. The event organizer needs to connect their video conferencing account (Zoom or Google Meet)
+2. In event type settings, select the video conferencing option in the Location field
+3. The system will automatically use the organizer's connected account to create the meeting
 4. All participants (hosts and attendees) will be automatically added to the video meeting
 
 ### How to add events to connected calendar?
 
 To add collective events to your calendar:
 
-1. The team **owner** (organizer) needs to connect their calendar account (Google, Outlook, Apple or Zoho) in their personal settings
-2. Enable "Auto-add events to calendar" in the owner's calendar settings
+1. The event organizer needs to connect their calendar account (Google, Outlook, Apple, or Zoho) in their personal settings
+2. Enable "Auto-add events to calendar" in the organizer's calendar settings
 3. Select a default calendar for automatic event creation
-4. When a collective event is booked, it will be automatically added to the owner's connected calendar
+4. When a collective event is booked, it will be automatically added to the organizer's connected calendar
 5. All participants (hosts and attendees) will be automatically included in the calendar event
 
 ## Managing Team Members
 
 ### Inviting Members
 
-Team owners can invite new members by:
+Organization owners and team admins can invite new members by:
 
 1. Navigating to the **Teams** section
 2. Clicking **Invite Members** in the Quick Actions sidebar
@@ -98,4 +115,4 @@ Team owners can invite new members by:
 
 ### Removing Members
 
-Team owners can remove members from the team at any time through the members list.
+Organization owners and team admins can remove members from a team at any time through the members list.
