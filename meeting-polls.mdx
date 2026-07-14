@@ -1,0 +1,132 @@
+---
+title: "Meeting Polls"
+description: Propose several times, let invitees vote for the ones that work for them, then book the winning time and send calendar invitations to everyone.
+icon: "square-poll-vertical"
+"og:title": "Meeting Polls - Novacal Help Center"
+"og:description": "Propose several times, let invitees vote, and book the time that works for everyone."
+"twitter:title": "Meeting Polls - Novacal Help Center"
+"twitter:description": "Propose several times, let invitees vote, and book the time that works for everyone."
+---
+
+Meeting polls help you find a time that works for a group. Instead of sending a booking link where the first person picks a slot, you propose several times, share one public link, and let everyone vote for the times they can make. When you see a clear winner, you book it — and Novacal creates the event, adds it to your calendar, and emails invitations to the participants you selected.
+
+Use meeting polls for team syncs, client workshops, interviews with multiple panelists, or any meeting where several people need to agree on a time.
+
+## How meeting polls work
+
+1. **Create a poll** – Give it a name, duration, and optional location.
+2. **Propose times** – Pick time options from your real availability (or add custom times).
+3. **Share the link** – Send the public poll URL to everyone you want to invite.
+4. **Collect votes** – Invitees enter their name and email and select every time that works for them.
+5. **Book the meeting** – Choose the winning time, select who to invite, and Novacal books it.
+
+A poll is **Active** while it's collecting votes, becomes **Scheduled** once you book a time, and can be **Canceled**.
+
+## How to create a meeting poll
+
+1. Go to the [Dashboard](https://app.novacal.io) and click **Meeting Polls** in the sidebar.
+2. Click **Create Poll**.
+3. Fill in the poll details:
+   - **Name** – What the meeting is about (e.g. "Q3 planning session"). This becomes the event name once booked.
+   - **Description** – Optional context shown to invitees on the public poll page.
+   - **Duration** – How long the meeting will be: 15, 30, 45, 60, 90, or 120 minutes.
+   - **Location** – Optional. See [Location](#location) below.
+   - **Show votes to participants** – See [Showing votes](#showing-votes) below.
+4. Add your **time options** (see below).
+5. Click **Create poll**.
+
+### Time options
+
+The time options are the times invitees vote on. Pick a date in the calendar and Novacal shows the times you're actually free, based on your [availability](/availability) and existing events — the same availability that powers your event types. Click a time to add it as an option, click it again to remove it.
+
+Need a time outside your normal availability? Click **Add custom time**, enter the time, and click **Add**.
+
+<Note>
+  Time options can't overlap each other, and they must be in the future. If you
+  change the poll's duration later, the existing options keep their start times
+  and their end times shift to match the new duration.
+</Note>
+
+Add as many options as you like across as many days as you like. Fewer, well-spread options usually get cleaner results than a long list.
+
+### Location
+
+Choose where the meeting will happen. This is optional — leave it as **No location** if you'll decide later.
+
+- **In person** – A physical meeting.
+- **Phone call** – Enter the phone number that will be called.
+- **Custom** – Enter any details you like (a meeting link, an address, instructions).
+- **Video conferencing** – Zoom, Google Meet, or Microsoft Teams.
+
+<Note>
+  Video conferencing options only appear if you've connected that app. Connect
+  Zoom, Google Meet, or Microsoft Teams under [Apps &
+  Integrations](/integrations/zoom) first, and they'll show up in the location
+  list.
+</Note>
+
+When you book the meeting, the conferencing link is generated automatically and included in the invitations.
+
+### Showing votes
+
+**Show votes to participants** controls what invitees see on the public poll page.
+
+- **Off** (default) – Invitees only see the time options. They can't see who voted or how many votes each time has.
+- **On** – Invitees see the vote count and the names of the people who voted for each time. This builds consensus faster, because people can see where the group is converging.
+
+You can change this setting at any time while the poll is active.
+
+## Sharing the poll
+
+Every poll has a public link (e.g. `novacal.io/p/xwllccjegf`). Share it with anyone you want to invite — they don't need a Novacal account.
+
+From the **Meeting Polls** list, click the copy icon on any poll to copy its public link. From inside a poll, use the copy icon in the header to copy the link, or the external-link icon to open the public page as your invitees see it.
+
+## How invitees vote
+
+On the public poll page an invitee:
+
+1. Picks a date and selects every time option that works for them (they can select as many as they like).
+2. Clicks **Next**, enters their **name** and **email**, and submits.
+
+They then see a confirmation page listing the times they voted for. Voting again with the same email address replaces their previous votes, so anyone can change their mind by submitting again.
+
+## Reviewing votes and booking the meeting
+
+Open a poll from the **Meeting Polls** list to see the results. For each time option you'll see the vote count and the names of the voters, and the option with the most votes is marked **Most votes**.
+
+To book the meeting:
+
+1. Click **Book meeting** on the time you want.
+2. Select the participants to invite — everyone who voted is selected by default. Uncheck anyone who shouldn't be invited.
+3. Click **Book & send invitations**.
+
+Novacal then:
+
+- Creates the event at the selected time.
+- Adds it to your calendar and generates the conferencing link if the poll has a video location.
+- Emails a calendar invitation to you and to every participant you selected.
+- Marks the poll as **Scheduled** and closes it to further voting.
+
+The booked event appears in your [Events](/events) list, and the poll page links straight to it.
+
+<Warning>
+  If the time you pick overlaps an existing event on your calendar, Novacal
+  still books it but warns you about the conflict. Check the time before
+  confirming.
+</Warning>
+
+## Editing and deleting a poll
+
+You can edit a poll — its name, description, duration, location, vote visibility, and time options — for as long as it's **Active**. Open the poll and click the pencil icon in the header.
+
+<Note>
+  Once a poll is **Scheduled**, it can no longer be edited. Change the booked
+  meeting from your [Events](/events) list instead.
+</Note>
+
+To delete a poll, click the trash icon on the poll card in the list, or in the poll's header. Deleting a poll deletes all of its votes and can't be undone. Deleting a poll after it's been booked doesn't cancel the booked event — cancel that from [Events](/events).
+
+## Notifications
+
+You get an email each time someone submits their votes, so you can watch the results come in without checking the dashboard. When you book the meeting, you and every selected participant receive a calendar invitation.

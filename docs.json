@@ -46,6 +46,7 @@
             ]
           },
           "events",
+          "meeting-polls",
           "availability",
           "workflows",
           {

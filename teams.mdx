@@ -48,6 +48,12 @@ To create a team, go to the **Teams** section in your dashboard and click **Crea
 
 Create collective event types where multiple team members can be booked together. When attendees book a collective event, they book with all selected hosts, and the system automatically finds availability that works for all hosts.
 
+### Round Robin Events
+
+Create round robin event types that distribute bookings across your team automatically. You add several hosts to the event type, but each booking is assigned to just **one** of them. This spreads the workload fairly — ideal for sales calls, support sessions, or intake meetings where any one of several people can take the meeting.
+
+When an attendee books, they don't choose a host. Novacal offers a time if **any** host is free, then assigns the least-busy available host behind the scenes.
+
 ### Team Members & Roles
 
 Novacal uses three role levels across organizations and teams:
@@ -101,6 +107,41 @@ To add collective events to your calendar:
 3. Select a default calendar for automatic event creation
 4. When a collective event is booked, it will be automatically added to the organizer's connected calendar
 5. All participants (hosts and attendees) will be automatically included in the calendar event
+
+## Round Robin Events Configuration
+
+Round robin event types require a team — you can only create one if you're part of a team. Look for **Round Robin Event** in the **Create** menu on the Event Types page.
+
+<Info>Round robin events are available with the **Team plan**.</Info>
+
+### How to add hosts to a round robin event type
+
+1. In event type settings, select the team members who should be hosts.
+2. Availability is calculated as the **union** of all hosts — a time is offered whenever at least one host is free. This is the opposite of collective events, which only offer times when everyone is free.
+3. When an attendee books, Novacal assigns the meeting to a single host. The attendee books with just that person; they don't pick who.
+
+### How hosts are assigned
+
+For each booking, Novacal looks at every host who is free at the chosen time and can fulfill the meeting's location, then assigns the one with the fewest bookings on that event type. This keeps the workload balanced over time.
+
+- Only hosts who are **available** at the selected time are considered.
+- If the event type uses a video conferencing location, only hosts who have that app connected are eligible.
+- Ties go to the host who was booked longest ago, so bookings rotate evenly.
+
+The assigned host becomes the organizer of that meeting and its only host. They receive the booking on their calendar and, if the event type uses video conferencing, the meeting is created with their connected account.
+
+<Warning>
+  If no host is available at the selected time — or none of the available hosts
+  can fulfill the chosen location — the booking can't be completed and the
+  attendee is asked to pick another time.
+</Warning>
+
+### How to connect a video conferencing app to a round robin event type
+
+1. Each host who should be assignable for video meetings needs to connect their own video conferencing account (Zoom or Google Meet).
+2. In event type settings, select the video conferencing option in the Location field.
+3. When a booking is assigned to a host, the meeting is created using **that host's** connected account.
+4. Hosts who haven't connected the required app are skipped when assigning that booking.
 
 ## Managing Team Members
 
