@@ -1,10 +1,10 @@
 ---
 title: "Preferences"
-description: Customize your event type preferences including calendar display names, colors, visibility settings, and confirmation redirects.
+description: Customize your event type preferences including calendar display names, invitation descriptions, colors, visibility settings, and confirmation redirects.
 "og:title": "Event Type Preferences - Novacal Help Center"
-"og:description": "Customize your event type preferences including calendar display names, colors, visibility settings, and confirmation redirects."
+"og:description": "Customize your event type preferences including calendar display names, invitation descriptions, colors, visibility settings, and confirmation redirects."
 "twitter:title": "Event Type Preferences - Novacal Help Center"
-"twitter:description": "Customize your event type preferences including calendar display names, colors, visibility settings, and confirmation redirects."
+"twitter:description": "Customize your event type preferences including calendar display names, invitation descriptions, colors, visibility settings, and confirmation redirects."
 ---
 
 ## Event Name Customization
@@ -31,6 +31,24 @@ To make your event names more personalized and informative, you can use these dy
 The default naming template for new events is `{{EVENT_DURATION}} meeting: {{HOST_NAME}} and {{BOOKER_NAME}}`. This name format helps provide clarity by showing the duration, the host, and the participant.
 
 If you decide to customize the event name, your changes will replace this default format, allowing for a personalized presentation of your event types in all integrations and views.
+
+## Event Description Customization
+
+You can also customize the description, or body, of the calendar invitation. This is the text that Novacal writes into the calendar event in Google Calendar, Outlook, Apple Calendar and Zoho, and into the `.ics` file attached to your emails.
+
+The field opens with the default text already in it: the booking form answers, then the reschedule link, then the cancel link. Edit it as you like.
+
+### Dynamic Variables
+
+The event name variables all work here, plus these:
+
+- `FORM_ANSWERS` - All booking form questions and their answers
+- `ATTENDEES` - Names and emails of the hosts, the booker, and the guests
+- `LOCATION` - The meeting link or the address
+- `RESCHEDULE_URL` - Link to reschedule the booking
+- `CANCEL_URL` - Link to cancel the booking
+
+If your event type does not allow rescheduling or cancellation, the related variable stays empty and Novacal removes the whole line, so no empty label is left behind.
 
 ## Event Type Color
 

@@ -34,6 +34,25 @@ You can customize how events appear in your connected calendar for each event ty
 - `BOOKER_NAME` - The name of the person who booked the event
 - `EVENT_DURATION` - Event duration (e.g., 30 minutes, 1 hour)
 
+## How to customize event description in your calendar
+
+The description is the body of the calendar event. By default it holds the answers the booker gave, and the links to reschedule and to cancel.
+
+1. Go to [Event Types](https://app.novacal.io) page and select the event type you want to customize
+2. Navigate to the **Preferences** tab
+3. Write your own text in the **Event Description Template** field
+
+**Available variables:**
+
+- `FORM_ANSWERS` - All booking form questions and their answers
+- `ATTENDEES` - Names and emails of the hosts, the booker and the guests
+- `LOCATION` - The meeting link or the address
+- `RESCHEDULE_URL` - Link to reschedule the booking
+- `CANCEL_URL` - Link to cancel the booking
+- `EVENT_TYPE_NAME`, `HOST_NAME`, `BOOKER_NAME` and `EVENT_DURATION` also work here
+
+If your event type does not allow rescheduling or cancellation, the related variable stays empty and Novacal removes the whole line. No empty label is left behind.
+
 ## How to remove connected Google Calendar account
 
 1. Navigate to [Calendar Settings](https://app.novacal.io/settings/calendar) or go to [Google Calendar integration](https://app.novacal.io/integrations/google-calendar) page
