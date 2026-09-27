@@ -228,7 +228,7 @@ Small things a contributor will trip over, recorded so they don't get rediscover
 
 Written and maintained by **Stefan Babic** ([@ste7](https://github.com/ste7)) — 72 commits since September 2025.
 
-Questions about the product go to [support@novacal.io](mailto:support@novacal.io). Product updates are posted on [LinkedIn](https://www.linkedin.com/company/novacal-io) and [X](https://x.com/novacalio).
+Questions about the product go to [support@novacal.io](mailto:support@novacal.io). Product updates are posted on [LinkedIn](https://www.linkedin.com/company/novacal-io).
 
 ---
 
